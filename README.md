@@ -1,16 +1,12 @@
-# FSGDM
+# Frequency Stochastic Gradient Descent with Momentum 
 
-**FSGDM** (Frequency Stochastic Gradient Descent with Momentum) is an optimizer implemented in PyTorch that dynamically adjusts the momentum filtering characteristics using an empirically effective dynamic magnitude response.
+This repository contains the official PyTorch implementation of **FSGDM** (Frequency Stochastic Gradient Descent with Momentum), an optimizer that dynamically adjusts the momentum filtering characteristics using an empirically effective dynamic magnitude response.
 
 Paper: [On the Performance Analysis of Momentum Method: A Frequency Domain Perspective](https://openreview.net/forum?id=tznvtmSEiN)
 
-Authors: Xianliang Li*, Jun Luo*, Zhiwei Zheng*, Hanxiao Wang, Li Luo, Lingkun Wen, Linlong Wu, Sheng Xu
-
-This repository contains the official PyTorch implementation of FSGDM.
-
 ---
 
-## Usage
+## How to use
 
 Install torch and run
 
@@ -70,7 +66,7 @@ Significant findings for DNN training:
 
 *For a more detailed explanation, please refer to our paper.*
 
-## Paper
+## Citation
 
 If you find FSGDM useful in your research, please cite our paper in the following format.
 
