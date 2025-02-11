@@ -13,7 +13,7 @@ class FSGDM(Optimizer):
     This is the official implementation of the FSGDM optimizer (version 1.0) in PyTorch.
     
     Paper: "On the Performance Analysis of Momentum Method: A Frequency Domain Perspective" 
-    (https://arxiv.org/abs/2411.19671).
+    (https://openreview.net/forum?id=tznvtmSEiN).
     
     Github repo: https://github.com/yinleung/FSGDM.
     
