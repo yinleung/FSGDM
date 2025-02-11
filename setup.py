@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="fsgdm",
-    version="1.0.0",
+    version="1.0",
     author="Xianliang Li",
     author_email="yinleung.ley@gmail.com",
     description="The official implementation of the Frequency SGD with Momentum (FSGDM) optimizer in PyTorch.",
