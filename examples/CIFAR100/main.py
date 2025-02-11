@@ -146,8 +146,8 @@ def main(args):
 
     # Define the loss function and optimizer
     criterion = nn.CrossEntropyLoss()
-    # optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=0.9, weight_decay=5e-4)
-    optimizer = FSGDM(model.parameters(), lr=args.lr, c_scaling=args.c_scaling, v_coefficient=args.v_coefficient, n_stages=args.n_stages, sigma=args.sigma)
+    # optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)
+    optimizer = FSGDM(model.parameters(), lr=args.lr, weight_decay=args.weight_decay, c_scaling=args.c_scaling, v_coefficient=args.v_coefficient, n_stages=args.n_stages, sigma=args.sigma)
 
     # Use CosineAnnealingLR so that the learning rate decreases following a cosine pattern over all epochs
     scheduler = CosineAnnealingLR(optimizer, T_max=args.epochs)
@@ -195,6 +195,10 @@ if __name__ == '__main__':
                         help='Number of gradient update steps (default: 117000)')
     parser.add_argument('--lr', default=0.1, type=float,
                         help='Learning rate (default: 0.1)')
+    parser.add_argument('--momentum', default=0.9, type=float,
+                        help='Momentum for SGD (default: 0.9)')
+    parser.add_argument('--weight_decay', default=5e-4, type=float,
+                        help='Weight decay for SGD (default: 5e-4)')
     parser.add_argument('--pretrained', action='store_true',
                         help='If set, use pretrained ResNet-50 weights (default: False)')
     parser.add_argument('--save_path', default='best_model.pth', type=str,
