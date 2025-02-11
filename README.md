@@ -4,7 +4,7 @@
 
 Paper: [On the Performance Analysis of Momentum Method: A Frequency Domain Perspective](https://openreview.net/forum?id=tznvtmSEiN)
 
-Authors: Xianliang Li, Jun Luo, Zhiwei Zheng, Hanxiao Wang, Li Luo, Lingkun Wen, Linlong Wu, Sheng Xu
+Authors: Xianliang Li*, Jun Luo*, Zhiwei Zheng*, Hanxiao Wang, Li Luo, Lingkun Wen, Linlong Wu, Sheng Xu
 
 This repository contains the official PyTorch implementation of FSGDM.
 
