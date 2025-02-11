@@ -20,7 +20,7 @@ pip install fsgdm
 
 or simply copy the `fsgdm.py` file to your codebase.
 
-Then use FSGDM optimizer in the following fashion
+Then use the FSGDM optimizer in the following fashion
 
 ```
 from fsgdm import fsgdm
@@ -42,10 +42,10 @@ Replace `lr`, `weight_decay`, `c_scaling`, `v_coefficient`, `n_stages`, and `sig
 
 - lr & weight_decay: We recommend using the same values as those typically used for SGDM in PyTorch.
 - c_scaling & v_coefficient: These parameters should lie in the **optimal zone**. For CNNs, a good rule of thumb is to aim for the region where `30.992/v_coefficient ≈ 1 + 1/c_scaling`.
-- n_stages: The number of training stages. Experiment with different values to find the best configuration for your specific task.
+- n_stages: The number of training stages. Users can experiment with different values to find the best configuration for specific tasks.
 - sigma: The number of gradient update steps. Users need to compute this value manually.
 
-**Remark: The optimal hyperparameter zones can vary across different tasks. We welcome pull requests and contributions that explore these zones for various applications.**
+**Remark: The optimal hyperparameter zones can vary across different tasks. We welcome contributions that explore these optimal zones for various learning tasks.**
 
 ### Examples
 
@@ -65,8 +65,8 @@ The high-frequency gradient components correspond to large and more abrupt chang
 Significant findings for DNN training:
 
 - High-frequency gradient components are undesired in the late stages of training
-- Preserving the original gradient in the early stages improve performance
-- Gradually amplifying low-frequency gradient components during training enhance performance
+- Preserving the original gradient in the early stages improves performance
+- Gradually amplifying low-frequency gradient components during training enhances performance
 
 *For a more detailed explanation, please refer to our paper.*
 
