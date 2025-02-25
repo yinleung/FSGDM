@@ -1,8 +1,10 @@
 # Frequency Stochastic Gradient Descent with Momentum 
 
-This repository contains the official PyTorch implementation of **FSGDM** (Frequency Stochastic Gradient Descent with Momentum), an optimizer that dynamically adjusts the momentum filtering characteristics using an empirically effective dynamic magnitude response.
+This repository contains the official PyTorch implementation of *Frequency Stochastic Gradient Descent* with Momentum (FSGDM), an optimizer that dynamically adjusts the momentum filtering characteristics using an empirically effective dynamic magnitude response.
 
-Paper: [On the Performance Analysis of Momentum Method: A Frequency Domain Perspective](https://openreview.net/forum?id=tznvtmSEiN)
+**Paper:** [On the Performance Analysis of Momentum Method: A Frequency Domain Perspective](https://openreview.net/forum?id=tznvtmSEiN)
+
+**TL;DR:** Momentum method can be interpreted as a time-variant filter for gradients.
 
 ---
 
