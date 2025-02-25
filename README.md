@@ -4,7 +4,7 @@ This repository contains the official PyTorch implementation of *Frequency Stoch
 
 **Paper:** [On the Performance Analysis of Momentum Method: A Frequency Domain Perspective](https://openreview.net/forum?id=tznvtmSEiN)
 
-**TL;DR:** Momentum method can be interpreted as a time-variant filter for gradients.
+**TL;DR:** Momentum method is a time-variant filter for gradients.
 
 ---
 
